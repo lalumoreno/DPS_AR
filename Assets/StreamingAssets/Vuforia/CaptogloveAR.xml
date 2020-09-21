@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="QR1_RH" size="7.000000 7.000000" />
+    <ImageTarget name="QR2_OBJ" size="8.000000 8.000000" />
+    <ImageTarget name="QR3_ONOFF" size="8.000000 8.000000" />
+    <ImageTarget name="QR4_CONF" size="8.000000 8.000000" />
+    <ImageTarget name="QR6_LEVER" size="8.000000 8.000000" />
+  </Tracking>
+</QCARConfig>

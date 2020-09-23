@@ -76,6 +76,7 @@ public class DPS : MonoBehaviour
             GUI.Label(new Rect(0,0, 200f, 200f), "PELIGRO", styleBig);
             GUI.Label(new Rect(0,0+100f, 200f, 200f), "Desenergize el DPS", styleSmall);
         }
+
     }
 
 

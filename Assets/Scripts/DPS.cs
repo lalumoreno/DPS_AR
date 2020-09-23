@@ -30,18 +30,11 @@ public class DPS : MonoBehaviour
     {
         transform.localScale += scaleChange;
 
-        // when the sphere scale extends 1.0f.
-        if (transform.localScale.y > 1f || transform.localScale.y > 1f)
+        // when the field scale extends 1.2f.
+        if (transform.localScale.y > 1.2f || transform.localScale.y > 1.2f)
         {
             transform.localScale = new Vector3(0, 0, 0);
         }
-
-/*
-        foreach (Transform go in taChildren)
-        {
-            go.GetComponent<Renderer>().material.color = Color.green;
-        }
-*/
     }
 
     public void ShowElectricField()

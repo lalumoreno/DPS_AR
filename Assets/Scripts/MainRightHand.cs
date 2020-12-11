@@ -19,10 +19,10 @@ public class MainRightHand : MonoBehaviour
     void Start()
     {
         //Configuration for Captoglove sensor as Right Hand 
-        RightHand = new MyHand(2443, MyHand.eHandType.TYPE_RIGHT_HAND);
-        RightHand.EnableLog();
-        RightHand.SetHandTransform(transform, Module.eModuleAxis.AXIS_X, Module.eModuleAxis.AXIS_Z, Module.eModuleAxis.AXIS_Y);
-        RightHand.SetFingerTransform(tThumb, tIndex, tMiddle, tRing, tPinky);    
+        RightHand = new MyHand(2443, MyHand.HandType.TYPE_RIGHT_HAND);
+        RightHand.SetLogEnabled(true);
+        RightHand.SetHandObject(transform);
+        RightHand.SetFingerObject(tThumb, tIndex, tMiddle, tRing, tPinky);    
 
         //Messages in display
         style = new GUIStyle();
@@ -39,7 +39,7 @@ public class MainRightHand : MonoBehaviour
         RightHand.MoveFingers();        
 
         //Interaction with myLever
-        if (RightHand.IsHandClosed() && lever.bCollided)
+        if (RightHand.HandClosed() && lever.bCollided)
         {
             CatchLever();
         }		
